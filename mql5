@@ -1,0 +1,60 @@
+mql5
+// Program: SIEA Zen
+// Developer's Site: forexroboteasy.com
+// Development: Forex Robot Easy Team
+
+// Include necessary libraries
+#include <Trade\Trade.mqh>
+#include <Arrays\ArrayObj.mqh>
+
+// Define trading pairs based on major currencies
+enum TradingPairs
+{
+   EURUSD,
+   USDJPY,
+   GBPUSD,
+   USDCHF,
+   AUDUSD,
+   USDCAD,
+   NZDUSD,
+   EURJPY,
+   EURGBP,
+   EURCHF,
+   EURAUD,
+   EURCAD,
+   EURNZD,
+   GBPJPY,
+   GBPCHF,
+   GBPAUD,
+   GBPCAD,
+   GBPNZD,
+   CHFJPY,
+   AUDJPY,
+   CADJPY,
+   NZDJPY,
+   AUDCHF,
+   CADCHF,
+   NZDCHF,
+   AUDCAD,
+   NZDCAD,
+   AUDNZD
+};
+
+// Define trading function
+void trade(TradingPairs pair)
+{
+   // Implement your trading logic here
+   // ...
+   // ...
+}
+
+// Main program
+void OnStart()
+{
+   // Enable trading for all 28 trading pairs
+   for (int i = 0; i < 28; i++)
+   {
+      TradingPairs pair = (TradingPairs)i;
+      trade(pair);
+   }
+}
